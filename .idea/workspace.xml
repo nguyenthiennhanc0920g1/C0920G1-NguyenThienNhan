@@ -1,11 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a1230c84-f8b6-4459-9500-97f2d871a01e" name="Default Changelist" comment="" />
+    <list default="true" id="a1230c84-f8b6-4459-9500-97f2d871a01e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/4_Git_HTML/Bai_tap/Bai_tap_tao_trang_CV_ca_nhan.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GitProject/GitProject" beforeDir="false" afterPath="$PROJECT_DIR$/GitProject/GitProject" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -18,14 +31,23 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/4_Git_HTML/Thuc_hanh" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="watcher.settings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\C0920G1_NGUYEN_THIEN_NHAN\Module 1\4_Git_HTML\Thuc_hanh" />
+    </key>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -41,6 +63,7 @@
       <workItem from="1600058707664" duration="77000" />
       <workItem from="1600058785515" duration="2532000" />
       <workItem from="1600176446187" duration="233000" />
+      <workItem from="1600323534736" duration="27327000" />
     </task>
     <servers />
   </component>
@@ -48,9 +71,21 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="462" y="107" key="FileChooserDialogImpl" timestamp="1600058781168">
+    <state x="275" y="23" key="#File_Watchers" timestamp="1600354440065">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="462" y="107" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1600058781168" />
+    <state x="275" y="23" key="#File_Watchers/0.0.1366.728@0.0.1366.728" timestamp="1600354440065" />
+    <state x="352" y="143" key="EditFileWatcherDialog" timestamp="1600354599048">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="352" y="143" key="EditFileWatcherDialog/0.0.1366.728@0.0.1366.728" timestamp="1600354599048" />
+    <state x="462" y="107" key="FileChooserDialogImpl" timestamp="1600327185610">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="462" y="107" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1600327185610" />
+    <state x="184" y="7" key="SettingsEditor" timestamp="1600356040120">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="184" y="7" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1600356040120" />
   </component>
 </project>
