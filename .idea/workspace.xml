@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a1230c84-f8b6-4459-9500-97f2d871a01e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/4_Git_HTML/Bai_tap/Bai_tap_tao_trang_CV_ca_nhan.html" beforeDir="false" afterPath="$PROJECT_DIR$/4_Git_HTML/Bai_tap/Bai_tap_tao_trang_CV_ca_nhan.html" afterDir="false" />
-    </list>
+    <list default="true" id="a1230c84-f8b6-4459-9500-97f2d871a01e" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -61,7 +58,7 @@
       <workItem from="1600058785515" duration="2532000" />
       <workItem from="1600176446187" duration="233000" />
       <workItem from="1600323534736" duration="27509000" />
-      <workItem from="1600400882248" duration="955000" />
+      <workItem from="1600400882248" duration="1303000" />
     </task>
     <servers />
   </component>
@@ -77,10 +74,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="352" y="143" key="EditFileWatcherDialog/0.0.1366.728@0.0.1366.728" timestamp="1600354599048" />
-    <state x="462" y="107" key="FileChooserDialogImpl" timestamp="1600327185610">
+    <state x="529" y="113" key="FileChooserDialogImpl" timestamp="1600402251552">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="462" y="107" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1600327185610" />
+    <state x="529" y="113" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1600402251552" />
     <state x="184" y="7" key="SettingsEditor" timestamp="1600356040120">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
