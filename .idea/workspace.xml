@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a1230c84-f8b6-4459-9500-97f2d871a01e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/4_Git_HTML/Bai_tap/Bai_tap_tao_trang_CV_ca_nhan.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GitProject/GitProject" beforeDir="false" afterPath="$PROJECT_DIR$/GitProject/GitProject" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/4_Git_HTML/Bai_tap/Bai_tap_tao_trang_CV_ca_nhan.html" beforeDir="false" afterPath="$PROJECT_DIR$/4_Git_HTML/Bai_tap/Bai_tap_tao_trang_CV_ca_nhan.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +60,8 @@
       <workItem from="1600058707664" duration="77000" />
       <workItem from="1600058785515" duration="2532000" />
       <workItem from="1600176446187" duration="233000" />
-      <workItem from="1600323534736" duration="27327000" />
+      <workItem from="1600323534736" duration="27509000" />
+      <workItem from="1600400882248" duration="955000" />
     </task>
     <servers />
   </component>
