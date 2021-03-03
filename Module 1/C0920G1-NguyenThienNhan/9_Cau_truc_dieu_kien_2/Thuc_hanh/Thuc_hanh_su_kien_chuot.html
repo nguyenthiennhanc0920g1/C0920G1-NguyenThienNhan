@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ball Move</title>
+</head>
+<body>
+    <form>
+        <img style="width: 15%; height: 15%" id="ball" src="https://cf.shopee.ph/file/d7aec1589c701c999ad0f82b286a9e6a" />
+        <p>Click button below to move the image to right</p>
+        <input type="button" onclick="moveRight()" value="Click Me" />
+    </form>
+    <script>
+        window.onload = init;
+        let ball = null;
+        ball = document.getElementById('ball');
+        function init() {
+            ball = document.getElementById('ball');
+            ball.style.position = 'relative'; // vị trí so với thằng cha, hoặc body (mặc định)
+            // ball.style.position = 'absolute'; // vị trí so với element thứ 2
+            ball.style.left = '0px'; // ball.style.xyz gắn css vào element
+        }
+        function moveRight() {
+            ball.style.left = parseInt(ball.style.left) + 10 + 'px';
+        }
+    </script>
+</body>
+</html>

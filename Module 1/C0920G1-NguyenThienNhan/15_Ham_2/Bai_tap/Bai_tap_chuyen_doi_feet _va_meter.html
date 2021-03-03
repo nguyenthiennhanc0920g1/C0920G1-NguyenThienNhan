@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Change</title>
+</head>
+<body>
+    <script>
+        function feetToMeter() {
+            let feet = document.getElementById('feet');
+            let meter = 0.305 * feet.value;
+            document.getElementById('result2').innerHTML = meter + ' meter';
+        }
+        function meterToFeet() {
+            let meter = document.getElementById('meter');
+            let feet = 3.279 * meter.value;
+            document.getElementById('result1').innerHTML = feet + ' feet';
+        }
+    </script>
+    <form>
+        <table border="1" cellpadding="10" cellspacing="0">
+            <tr>
+                <th>Meter</th>
+                <th>Feet</th>
+            </tr>
+            <tr>
+                <td><input type="text" id="meter"></td>
+                <td><input type="text" id="feet"></td>
+            </tr>
+            <tr style="text-align: center">
+                <td><button type="button" onclick="meterToFeet()">M &rarr; F</button></td>
+                <td><button type="button" onclick="feetToMeter()">F &rarr; M</button></td>
+            </tr>
+            <tr>
+                <td id="result1"></td>
+                <td id="result2"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

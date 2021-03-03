@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai 1</title>
+</head>
+<body>
+    <h4>Click the button to join the array elements into a string.</h4>
+    <button type="button" onclick="join()">Join</button>
+    <h4 id="display"></h4>
+    <script>
+        function join () {
+            let myColor = ["Red", "Green", "White", "Black"];
+            let x = document.getElementById('display');
+            x.innerHTML = myColor.join(',');
+        }
+    </script>
+</body>
+</html>

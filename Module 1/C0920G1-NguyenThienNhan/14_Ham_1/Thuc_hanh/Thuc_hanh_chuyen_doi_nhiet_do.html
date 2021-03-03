@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Change temperature</title>
+</head>
+<body>
+    <form>
+        <h1>Temperature Converter</h1>
+        <p>Type a value in the F field to convert the value to C</p>
+        Fahrenheit <input id="inputF" type="number"><br/><br/>
+        <p>Result</p>
+        <p id="outputC"></p>
+        <button type="button" onclick="ftoC()">Converter</button>
+        <button type="reset" onclick="clear()">Reset</button>
+    </form>
+    <script>
+        let f = document.getElementById('inputF');
+        let c = 0;
+        function ftoC() {
+            c = (f.value - 32)/1.8;
+            document.getElementById('outputC').innerHTML = c + '';
+        }
+    </script>
+</body>
+</html>

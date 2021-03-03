@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Check Prime</title>
+</head>
+<body>
+    <script>
+        function checkPrime() {
+            let n = document.getElementById('input').value;
+            let flag = true;
+            if (n < 2) {
+                flag = false;
+            } else if (n === '2') {
+                flag = true;
+            } else if (n % 2 === 0) {
+                flag = false;
+            } else {
+                for (let i = 2; i <= Math.sqrt(n); i++) {
+                    if (n % i === 0) {
+                        flag = false;
+                        break;
+                    }
+                }
+            }
+            if (flag === true){
+                alert('This is Prime');
+            }
+            else {
+                alert('This is NOT Prime');
+            }
+        }
+    </script>
+    <form>
+        <label>
+            <input id="input" type = number>
+        </label>
+        <button onclick="checkPrime()" type="button">Check</button>
+    </form>
+</body>
+</html>

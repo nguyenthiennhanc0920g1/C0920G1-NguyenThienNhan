@@ -1,0 +1,51 @@
+<div class="container">
+  <h1>Customer list</h1>
+  <div>
+    <div style="float: right" class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search by name" aria-label="Search"
+             [(ngModel)]="search">
+      <button class="btn btn-outline-success my-2 my-sm-0" (click)="searchByName()">Search</button>
+    </div>
+  </div>
+  <div>
+    <table class="table table-hover">
+      <thead class="thead-dark">
+      <tr>
+        <th scope="col">Mã số sổ</th>
+        <th scope="col">Mã khách hàng</th>
+        <th scope="col">Tên khách hàng</th>
+        <th scope="col">Ngày mở sổ</th>
+        <th scope="col">Thời gian bắt đầu gửi</th>
+        <th scope="col">Kỳ hạn</th>
+        <th scope="col">Số tiền gửi</th>
+        <th scope="col">Lãi suất</th>
+        <th scope="col">Ưu đãi</th>
+        <th colspan="2" scope="col"></th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngIf="customers.length === 0">
+        <td>Không có khách hàng nào!</td>
+      </tr>
+      <tr *ngFor="let customer of customers | orderBy: key: reverse | paginate: { itemsPerPage: 2, currentPage: p }">
+        <td>{{customer.id}}</td>
+        <td>{{customer.idCustomer}}</td>
+        <td>{{customer.nameCustomer}}</td>
+        <td>{{customer.dayOpen}}</td>
+        <td>{{customer.dayStart}}</td>
+        <td>{{customer.kyHan}} tháng</td>
+        <td>{{customer.soTienGui}} VND</td>
+        <td>{{customer.laiSuat}} %/năm</td>
+        <td>{{customer.uuDai}}</td>
+        <td>
+          <button (click)="updateCustomer(customer)" class="btn btn-success">Edit</button>
+        </td>
+        <td>
+          <button (click)="returnCustomer(customer)" class="btn btn-danger">Delete</button>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+    <pagination-controls (pageChange)="p = $event"></pagination-controls>
+  </div>
+</div>

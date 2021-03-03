@@ -1,0 +1,13 @@
+<div>
+  <div class="modal-dialog" role="document">
+    <div class="modal-content" *ngIf="customer">
+      <div class="modal-body">
+        <h4 class="text-center text-danger" >Bạn có muốn xóa thông tin sổ tiết kiệm số {{customer.id}} hay không ?  </h4>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" (click)="close()">Close</button>
+        <button (click)="deleteCustomer()" type="button" class="btn btn-outline-danger">Delete</button>
+      </div>
+    </div>
+  </div>
+</div>

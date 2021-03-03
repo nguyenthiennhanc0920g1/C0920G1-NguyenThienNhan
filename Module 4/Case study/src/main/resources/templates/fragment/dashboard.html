@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="fragment/banner :: head"></head>
+<body class="theme-grey">
+<div th:fragment="dashboard">
+    <div class="block-header">
+        <h2>DASHBOARD</h2>
+    </div>
+    <div class="row clearfix">
+            <div class="col-lg-2 col-md-2 col-sm-6 col-xs-12">
+                <div class="info-box bg-pink hover-expand-effect">
+                    <div class="icon">
+                        <a th:href="@{/}">
+                            <i class="material-icons">home</i>
+                        </a>
+                    </div>
+                    <div class="content">
+                        <div class="text">HOME</div>
+                    </div>
+                </div>
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-6 col-xs-12">
+            <div class="info-box bg-cyan hover-expand-effect">
+                <div class="icon">
+                    <a th:href="@{/employee}">
+                        <i class="material-icons">person</i>
+                    </a>
+                </div>
+                <div class="content">
+                    <div class="text">EMPLOYEE</div>
+                    <div class="number" th:text="${sizeListE}"></div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-6 col-xs-12">
+            <div class="info-box bg-light-green hover-expand-effect">
+                <div class="icon">
+                    <a th:href="@{/customer}">
+                        <i class="material-icons">portrait</i>
+                    </a>
+                </div>
+                <div class="content">
+                    <div class="text">CUSTOMER</div>
+                    <div class="number" th:text="${sizeListC}"></div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-6 col-xs-12">
+            <div class="info-box bg-orange hover-expand-effect">
+                <div class="icon">
+                    <a href="http://localhost:8085/service">
+                        <i class="material-icons">add_ic_call</i>
+                    </a>
+                </div>
+                <div class="content">
+                    <div class="text">SERVICE</div>
+                    <div class="number count-to" data-from="0" data-to="0" data-speed="1000"
+                         data-fresh-interval="20"></div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-6 col-xs-12">
+            <div class="info-box bg-grey hover-expand-effect">
+                <div class="icon">
+                    <a href="http://localhost:8085/contract">
+                        <i class="material-icons">person_add</i>
+                    </a>
+                </div>
+                <div class="content">
+                    <div class="text">CONTRACT</div>
+                    <div class="number count-to" data-from="0" data-to="0" data-speed="1000"
+                         data-fresh-interval="20"></div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-6 col-xs-12">
+            <div class="info-box bg-purple hover-expand-effect">
+                <div class="icon">
+                    <i class="material-icons">search</i>
+                </div>
+                <div class="content">
+                    <div class="text">SEARCH</div>
+                    <div class="number count-to" data-from="0" data-to="0" data-speed="1000"
+                         data-fresh-interval="20"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div th:replace="fragment/banner :: script"></div>
+</body>
+</html>

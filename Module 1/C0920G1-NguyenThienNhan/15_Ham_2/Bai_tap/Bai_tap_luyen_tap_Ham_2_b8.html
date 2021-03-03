@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai 8</title>
+</head>
+<body>
+    <script>
+        function arrAdd(n) {
+            let arr = [];
+            do{
+                n = prompt('Input Element:');
+                arr.push(n);
+            }
+            while (n !== 'stop');
+            arr.reverse();
+            arr.shift();
+            alert(arr);
+        }
+        let num = '';
+        arrAdd(num);
+    </script>
+</body>
+</html>

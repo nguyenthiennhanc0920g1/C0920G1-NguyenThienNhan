@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nobita</title>
+</head>
+<body onload="doReady()">
+    <img id="nobita" style="width: 10%; height: 10%" src="https://w0.pngwave.com/png/947/1003/shizuka-minamoto-nobita-nobi-doraemon-animation-doraemon-png-clip-art.png">
+    <p>Use up, down, left, right to move Nobita</p>
+    <script>
+        let pic = document.getElementById('nobita');
+
+        
+        function up() {
+            pic.style.top = parseInt(pic.style.top) -5 + 'px';
+        }
+        function down() {
+            pic.style.top = parseInt(pic.style.top) + 5 + 'px';
+        }
+        function left() {
+            pic.style.left = parseInt(pic.style.left) - 5 + 'px';
+        }
+        function right() {
+            pic.style.left = parseInt(pic.style.left) + 5 + 'px';
+        }
+
+        function move(evt) {
+            switch (evt.keyCode) {
+                case 37:
+                    left();
+                    break;
+                case 39:
+                    right();
+                    break;
+                case 38:
+                    up();
+                    break;
+                case 40:
+                    down();
+                    break;
+            }
+        }
+        function doReady() {
+            pic.style.position = 'relative';
+            pic.style.left = '0px';
+            pic.style.top = '0px';
+            window.addEventListener('keydown', move);
+        }
+    </script>
+</body>
+</html>

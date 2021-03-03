@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Troll</title>
+</head>
+<body>
+    <h1 style="text-align: center">Do you love me</h1>
+    <form>
+        <button style="margin-left: 47%; position: absolute" type="button" onclick="yes()" value="Yes">Yes</button>
+        <button style="margin-left: 50%; position: absolute" type="button" onmouseover="move()" id="troll">No</button>
+    </form>
+    <script>
+        window.onload = init;
+        function init() {
+            let troll = document.getElementById('troll')
+            troll.style.position = 'relative';
+            troll.style.left = '0px';
+            troll.style.top = '0px';
+        }
+        function yes() {
+            alert('OK')
+        }
+        let troll = document.getElementById('troll');
+
+        function move() {
+            troll.style.left = parseInt(troll.style.left) + Math.floor((Math.random() * 200) +50) + 'px';
+            troll.style.top = parseInt(troll.style.top) + Math.floor((Math.random() * 200) +50) + 'px';
+            troll.style.left = parseInt(troll.style.left) - Math.floor((Math.random() * 200) +50) + 'px';
+            troll.style.top = parseInt(troll.style.top) - Math.floor((Math.random() * 200) +50) + 'px';
+        }
+    </script>
+</body>
+</html>

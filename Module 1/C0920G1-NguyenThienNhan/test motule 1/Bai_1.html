@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr = [];
+    let num = '';
+    let newArr = [];
+    let amount = parseInt(prompt("Input amount of elements:"));
+    while (amount > 20) {
+        alert('Amount wrong');
+        amount = parseInt(prompt("Input amount of elements:"));
+    }
+    do {
+        num = parseInt(prompt('Input elements:'));
+        arr.push(num);
+    }
+    while (arr.length < amount);
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] % 3 === 0 && arr[i] % 5 === 0) {
+            newArr.push(arr[i]);
+        }
+    }
+    let sum = 0;
+    for (let i = 0; i < newArr.length; i++) {
+        sum += newArr[i];
+    }
+    console.log(arr);
+    console.log(newArr);
+    console.log(sum);
+</script>
+</body>
+</html>

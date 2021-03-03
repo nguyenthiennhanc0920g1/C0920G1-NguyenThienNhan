@@ -1,0 +1,94 @@
+<h2>Add new customer</h2>
+<form>
+  <table>
+    <tr>
+      <td>Id:</td>
+      <td>
+        <label>
+          <input placeholder="" [innerText]="customerService.currentCustomer.customerId">
+        </label>
+      </td>
+    </tr>
+    <tr>
+      <td>Name:</td>
+      <td>
+        <label>
+          <input placeholder="Full name" [innerText]="customerService.currentCustomer.customerName">
+        </label>
+      </td>
+    </tr>
+    <tr>
+      <td>Birthday:</td>
+      <td>
+        <label>
+          <input type = "date" placeholder="DD/MM/YYYY" [innerText]="customerService.currentCustomer.customerBirthday">
+        </label>
+      </td>
+    </tr>
+    <tr>
+      <td>Gender:</td>
+      <td>
+        <input type="radio" id="male" name="gender" value="1" [innerText]="customerService.currentCustomer.customerGender">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="2" [innerText]="customerService.currentCustomer.customerGender">
+        <label for="female">Female</label>
+      </td>
+    </tr>
+    <tr>
+      <td>Id card:</td>
+      <td>
+        <label>
+          <input placeholder="xxxxxxxxxx" [innerText]="customerService.currentCustomer.customerIdCard">
+        </label>
+      </td>
+    </tr>
+    <tr>
+      <td>Phone number:</td>
+      <td>
+        <label>
+          <input placeholder="0xxxxxxxxx" [innerText]="customerService.currentCustomer.customerPhone">
+        </label>
+      </td>
+    </tr>
+    <tr>
+      <td>Email:</td>
+      <td>
+        <label>
+          <input placeholder="abc@abc.abc" [innerText]="customerService.currentCustomer.customerEmail">
+        </label>
+      </td>
+    </tr>
+    <tr>
+      <td>Address:</td>
+      <td>
+        <label>
+          <input placeholder="" [innerText]="customerService.currentCustomer.customerAddress">
+        </label>
+      </td>
+    </tr>
+    <tr>
+      <td>Type:</td>
+      <td>
+        <select name="" id="typeCustomer">
+<!--          <option value="1" [innerText]="customerService.currentCustomer.customerTypeId.nameCustomerType">Member</option>-->
+<!--          <option value="2" [innerText]="customerService.currentCustomer.customerTypeId.nameCustomerType">Silver</option>-->
+<!--          <option value="3" [innerText]="customerService.currentCustomer.customerTypeId.nameCustomerType">Gold</option>-->
+<!--          <option value="4" [innerText]="customerService.currentCustomer.customerTypeId.nameCustomerType">Platinum</option>-->
+<!--          <option value="5" [innerText]="customerService.currentCustomer.customerTypeId.nameCustomerType">Diamond</option>-->
+          <option value="1"  [innerText]="customerService.currentCustomer.customerTypeId.nameCustomerType">Member</option>
+          <option value="2" >Silver</option>
+          <option value="3">Gold</option>
+          <option value="4">Platinum</option>
+          <option value="5">Diamond</option>
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>
+        <button (click)="createEmployee(customerService.currentCustomer)">Accept</button>
+        <button type = "reset">Cancel</button>
+      </td>
+    </tr>
+  </table>
+</form>

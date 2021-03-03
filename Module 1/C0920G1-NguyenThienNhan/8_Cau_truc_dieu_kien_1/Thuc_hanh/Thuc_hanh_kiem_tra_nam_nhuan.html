@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nam Nhuan</title>
+    <script>
+        function isLeapYear(year){
+            let isLeap = false;
+            const list = document.getElementsByClassName('abc');
+            if (year % 400 === 0) {
+                    isLeap = true;
+            }
+            else if (year % 4 === 0 && year % 100 !== 0) {
+                isLeap = true;
+            }
+            return isLeap;
+        }
+        const year = parseInt(prompt('Input year:'));
+        const isLeap = isLeapYear(year);
+        if(isLeap){
+            alert(year + 'is a leap year')
+        }
+        else{
+            alert(year + 'is NOT a leap year')
+        }
+    </script>
+</head>
+<body>
+</body>
+</html>

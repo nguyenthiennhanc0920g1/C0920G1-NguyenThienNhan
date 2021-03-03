@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>List</title>
+</head>
+<body>
+<form>
+<!--<form th:action="@{/cart}" th:method="POST">-->
+    <h1 style="text-align: center">Danh sách sản phẩm</h1>
+    <table border="1" style="border: black; margin: 0px auto; text-align: center">
+        <tr>
+            <th>Tên sản phẩm</th>
+            <th>Hình ảnh</th>
+            <th>Mô tả</th>
+            <th>Giá</th>
+            <th>Số lượng</th>
+            <th>Tổng tiền</th>
+            <th></th>
+        </tr>
+        <tr th:each="product : ${listProduct}">
+            <td th:text="${product.getName()}"></td>
+            <td>
+                <img style="height: 100px; width: 100px;" th:src="${product.getImg()}"/>
+            </td>
+            <td th:text="${product.getDescription()}"></td>
+            <td><span id="price" th:text="${product.getPrice()}"></span></td>
+            <td>
+                <div class="buttons_added">
+                    <input class="minus is-form" type="button" value="-">
+                    <input id="quantity" style="width: 30px" aria-label="quantity" class="input-qty" max="10" min="0"
+                           type="number" value="0">
+                    <input class="plus is-form" type="button" value="+">
+                </div>
+            </td>
+            <td id="total"></td>
+            <td><button type="submit">Thêm</button></td>
+            <td><button onclick="getTotal()">run</button></td>
+        </tr>
+    </table>
+</form>
+<script language="javascript" src="js/js.js"></script>
+</body>
+</html>

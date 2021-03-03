@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr = [];
+    let num = '';
+    let amount = parseInt(prompt("Input amount of elements:"));
+
+    while (amount > 50) {
+        alert('Amount wrong');
+        amount = parseInt(prompt("Input amount of elements:"));
+    }
+    do {
+        num = parseInt(prompt('Input elements:'));
+        arr.push(num);
+    }
+    while (arr.length < amount);
+    let k = parseInt(prompt('Input k:'));
+    let newArr = [];
+    for (let i = 0; i < arr.length; i++) {
+        for (let j = i + 1; j < arr.length; j++) {
+            if ((arr[i] + arr[j]) % k === 0) {
+                newArr.push('(' + arr[i] + ',' + arr[j] + ')');
+            }
+        }
+    }
+    console.log(newArr);
+    console.log(newArr.length);
+</script>
+</body>
+</html>

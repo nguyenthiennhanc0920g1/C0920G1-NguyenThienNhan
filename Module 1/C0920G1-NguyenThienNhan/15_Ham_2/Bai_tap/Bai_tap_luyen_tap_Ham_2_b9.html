@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai 9</title>
+</head>
+<body>
+    <script>
+        function checkArr(n) {
+            let arr = [];
+            do {
+                n = prompt('Input Element:');
+                arr.push(n);
+            }
+            while (n !== 'stop');
+            arr.pop();
+            alert(arr);
+            char = prompt('Input char:');
+            debugger;
+            let index = arr.indexOf(char);
+            if (index !== -1){
+                let arrChar = [];
+                while (index !== -1) {
+                    arrChar.push(index);
+                    index = arr.indexOf(char, index + 1);
+                }
+                alert(arrChar);
+            }
+            else {
+                alert(index);
+            }
+        }
+        checkArr();
+    </script>
+</body>
+</html>

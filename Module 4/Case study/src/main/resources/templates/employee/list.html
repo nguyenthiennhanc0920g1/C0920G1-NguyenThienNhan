@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="fragment/banner :: head">
+    <title>Employee</title>
+</head>
+<body class="theme-grey">
+<div th:replace="fragment/banner :: banner"></div>
+<div th:replace="fragment/menu :: menu"></div>
+<section class="content">
+    <div class="container-fluid">
+        <div th:replace="fragment/dashboard :: dashboard"></div>
+        <div class="row clearfix">
+            <h1>Danh sách nhân viên</h1><br>
+            <a th:href="@{/employee/new}" class="btn btn-success">+ Add new employee</a>
+            <form class="form-inline pull-right" th:action="@{/employee/search/1}" method="GET">
+                <input type="text" class="form-control" name="q" placeholder="Employee name..."/>
+                <button type="submit" class="btn btn-primary">Search</button>
+            </form>
+        </div>
+        <th:block th:if="${#lists.isEmpty(listPage.pageList)}">
+            <h3>No employee</h3>
+        </th:block>
+        <th:block th:unless="${#lists.isEmpty(listPage.pageList)}">
+            <form>
+                <table class="table table-bordered table-hover">
+                    <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Birthday</th>
+                        <th>Gender</th>
+                        <th>Id card</th>
+                        <th>Salary</th>
+                        <th>Phone</th>
+                        <th>Email</th>
+                        <th>Address</th>
+                        <th>Division</th>
+                        <th>Position</th>
+                        <th>Education degree</th>
+<!--                        <th>User</th>-->
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr th:each="employee : ${listPage.pageList}">
+                        <td th:text="${employee.getEmployeeIdString()}"></td>
+                        <td th:text="${employee.getEmployeeName()}"></td>
+                        <td th:text="${employee.getEmployeeBirthday()}"></td>
+                        <td th:text="${employee.getGender()}"></td>
+                        <td th:text="${employee.getEmployeeIdCard()}"></td>
+                        <td th:text="${employee.getEmployeeSalary()}"></td>
+                        <td th:text="${employee.getEmployeePhone()}"></td>
+                        <td th:text="${employee.getEmployeeEmail()}"></td>
+                        <td th:text="${employee.getEmployeeAddress()}"></td>
+                        <td th:text="${employee.getDivision().getDivisionName()}"></td>
+                        <td th:text="${employee.getPosition().getPositionName()}"></td>
+                        <td th:text="${employee.getEducationDegree().getEducationDegreeName()}"></td>
+<!--                        <td th:text="${employee.getUser().getUsername()}"></td>-->
+                        <td><a th:href="@{'/employee/edit/' + ${employee.getEmployeeId()}}"><span
+                                class="glyphicon glyphicon-pencil"></span></a></td>
+                        <td><a type="button" data-toggle="modal" data-target="#exampleModal"><span
+                                class="glyphicon glyphicon-trash"></span></a></td>
+                        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+                             aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title">Delete</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>Are you delete employee?</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-primary" data-dismiss="modal">No</button>
+                                        <a th:href="@{'/employee/delete/' + ${employee.getEmployeeId()}}"
+                                           type="button" class="btn btn-secondary">yes
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </tr>
+                    </tbody>
+                </table>
+                <h3 th:if="${successMsg}" th:text="${successMsg}" style="color: red"></h3>
+                <div>
+                    <ul class="pagination">
+                        <li
+                                th:class="${currentIndex == 1}? 'page-item disabled' : 'page-item'">
+                            <a class="page-link" th:href="@{/employee}">First</a>
+                        </li>
+                        <li
+                                th:class="${currentIndex == 1}? 'page-item disabled': 'page-item' ">
+                            <a class="page-link" aria-label="Previous"
+                               th:href="@{|${baseUrl}${currentIndex - 1}|}"
+                               title='Go to previous page'><span aria-hidden="true">«</span>
+                                <span class="sr-only">Previous</span></a>
+                        </li>
+                        <li th:each="item : ${#numbers.sequence(beginIndex,endIndex)}"
+                            th:class="${item == currentIndex ? 'page-item active' :'page-item' }">
+                            <a class="page-link" th:href="@{|${baseUrl}${item}|}"> <span
+                                    th:text='${item}'>1</span>
+                            </a>
+                        </li>
+                        <li
+                                th:class="${currentIndex == totalPageCount}? 'page-item disabled': 'page-item'">
+                            <a class="page-link" aria-label="Next"
+                               th:href="@{|${baseUrl}${currentIndex + 1}|}" title='Go to next page'><span
+                                    aria-hidden="true">»</span> <span class="sr-only">Next</span></a>
+                        </li>
+                        <li
+                                th:class="${currentIndex == totalPageCount}? 'page-item disabled':'page-item'">
+                            <a class="page-link" th:href="@{|${baseUrl}${totalPageCount}|}">Last</a>
+                        </li>
+                    </ul>
+                </div>
+            </form>
+        </th:block>
+    </div>
+</section>
+<div th:replace="fragment/banner :: script"></div>
+<script src="../../js/casestudy.js"></script>
+</body>
+</html>

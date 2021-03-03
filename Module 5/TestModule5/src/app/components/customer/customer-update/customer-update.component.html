@@ -1,0 +1,105 @@
+<div>
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Sửa thông tin</h5>
+      </div>
+      <form [(ngModel)]="customerUpdate" [formGroup]="formUpdateCustomer" (ngSubmit)="onSubmit()" class="modal-add">
+        <div class="form-group row">
+          <label class="col-sm-2 col-form-label">Mã số sổ</label>
+          <div class="col-sm-10">
+            <input [value]="customerUpdate.id" readonly type="text" class="form-control mr-sm-2" formControlName="id">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label class="col-sm-2 col-form-label">Mã số khách hàng</label>
+          <div class="col-sm-10">
+            <input [value]="customerUpdate.idCustomer" readonly type="text" class="form-control mr-sm-2" formControlName="idCustomer">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label class="col-sm-2 col-form-label">Tên khách hàng</label>
+          <div class="col-sm-10">
+            <input [value]="customerUpdate.nameCustomer"
+                   [class]="formUpdateCustomer.controls.name.invalid && formUpdateCustomer.controls.name.touched ? 'border-danger' : ''"
+                   type="text" class="form-control" formControlName="name">
+            <div *ngIf="formUpdateCustomer.get('name').touched">
+              <p class="text-danger" *ngIf="formUpdateCustomer.get('name').hasError('required') ">Tên Không Được Bỏ
+                Trống</p>
+              <p class="text-danger"
+                 *ngIf="formUpdateCustomer.get('name').hasError('pattern') || formUpdateCustomer.get('name').hasError('minlength') ">
+                Tên không đúng định dạng và độ dài Tên> 6</p>
+            </div>
+          </div>
+        </div>
+        <!--  End row 1      -->
+        <div class="form-group row">
+          <label class="col-sm-2 col-form-label">Ngày mở sổ</label>
+          <div class="col-sm-10">
+            <input type="date" class="form-control mr-sm-2" formControlName="dayOpen">
+            <p *ngIf="formUpdateCustomer.get('dayOpen').hasError('dayOpen')
+                 && formUpdateCustomer.get('dayOpen').dirty" style="color: red">Ngày mở sổ phải nhỏ hơn hoặc bằng ngày
+              hiện tại</p>
+          </div>
+        </div>
+        <div class="form-group row">
+          <label class="col-sm-2 col-form-label">Thời gian bắt đầu gửi</label>
+          <div class="col-sm-10">
+            <input type="date" class="form-control mr-sm-2" formControlName="dayStart">
+            <p *ngIf="formUpdateCustomer.get('dayStart').hasError('dayStart')
+                 && formUpdateCustomer.get('dayStart').dirty" style="color: red">Ngày bắt đầu gửi phải nhỏ hơn hoặc bằng
+              ngày hiện tại</p>
+          </div>
+        </div>
+        <!--                End row 2-->
+        <div class="form-group row">
+          <label class="col-sm-2 col-form-label">Kỳ hạn</label>
+          <div class="col-sm-10">
+            <select class="form-control mr-sm-2">
+              <option formControlName="kyHan" value="1">3 tháng</option>
+              <option formControlName="kyHan" value="6">6 tháng</option>
+              <option formControlName="kyHan" value="12">1 năm</option>
+              <option formControlName="kyHan" value="60">5 năm</option>
+              <option formControlName="kyHan" value="Không kỳ hạn">Không kỳ hạn</option>
+            </select>
+          </div>
+        </div>
+        <!--        -->
+        <div class="form-group row">
+          <label class="col-sm-2 col-form-label">Số tiền gửi</label>
+          <div class="col-sm-10">
+            <input [value]="customerUpdate.soTienGui" type="text" class="form-control mr-sm-2" formControlName="soTienGui">
+          </div>
+        </div>
+        <!--        -->
+        <div class="form-group row">
+          <label class="col-sm-2 col-form-label">Lãi suất</label>
+          <div class="col-sm-10">
+            <input [value]="customerUpdate.laiSuat" type="text" class="form-control mr-sm-2" formControlName="laiSuat">
+          </div>
+          <div *ngIf="formUpdateCustomer.get('name').touched">
+            <p class="text-danger" *ngIf="formUpdateCustomer.get('name').hasError('required') ">Không Được Bỏ
+              Trống</p>
+          </div>
+        </div>
+        <!--        -->
+        <div class="form-group row">
+          <label class="col-sm-2 col-form-label">Ưu đãi</label>
+          <div class="col-sm-10">
+            <input [value]="customerUpdate.uuDai" type="text" class="form-control mr-sm-2"  formControlName="uuDai">
+          </div>
+          <div *ngIf="formUpdateCustomer.get('name').touched">
+            <p class="text-danger" *ngIf="formUpdateCustomer.get('name').hasError('required') ">Không Được Bỏ
+              Trống</p>
+          </div>
+        </div>
+        <div class="form-group row mr-0 ml-0">
+          <button type="button" class="btn btn-secondary" (click)="close()">Close</button>
+          <button type="submit" [disabled]="formUpdateCustomer.invalid" class="btn btn-primary">
+            Save Customer
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

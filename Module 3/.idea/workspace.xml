@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="4e8a9128-9f11-42bd-9a24-86a817ff6d8e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../Module 4/8. Validation/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Module 4/8. Validation/.idea/8. Validation.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Module 4/8. Validation/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Module 4/8. Validation/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Module 4/8. Validation/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Module 4/Case study/src/main/resources/static/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Module 4/Case study/src/main/resources/static/js/casestudy.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Module 4/Case study/src/main/resources/templates/customer/edit.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Module 4/Case study/src/main/resources/templates/layout.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module 1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Module 1/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module 2/out/production/Module 2/Data_case_study_SQL/Customers.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Module 2/out/production/Module 2/Data_case_study_SQL/Customers.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module 2/src/Data_case_study_SQL/Customers.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Module 2/src/Data_case_study_SQL/Customers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module 4/Case study/src/main/java/com/nhan/case_study/controller/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Module 4/Case study/src/main/java/com/nhan/case_study/controller/CustomerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module 4/Case study/src/main/java/com/nhan/case_study/controller/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Module 4/Case study/src/main/java/com/nhan/case_study/controller/HomeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module 4/Case study/src/main/java/com/nhan/case_study/model/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Module 4/Case study/src/main/java/com/nhan/case_study/model/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module 4/Case study/src/main/java/com/nhan/case_study/repository/customer/ICustomerRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Module 4/Case study/src/main/java/com/nhan/case_study/repository/customer/ICustomerRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module 4/Case study/src/main/java/com/nhan/case_study/service/customer/ICustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Module 4/Case study/src/main/java/com/nhan/case_study/service/customer/ICustomerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module 4/Case study/src/main/java/com/nhan/case_study/service/customer/impl/CustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Module 4/Case study/src/main/java/com/nhan/case_study/service/customer/impl/CustomerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module 4/Case study/src/main/resources/templates/customer/create.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Module 4/Case study/src/main/resources/templates/customer/create.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module 4/Case study/src/main/resources/templates/customer/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Module 4/Case study/src/main/resources/templates/customer/list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module 4/Case study/src/main/resources/templates/customertype/edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Module 4/Case study/src/main/resources/templates/customertype/edit.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module 4/DemoFiles/UploadMultiFile/CGDN-Spring-UploadMultiFiles" beforeDir="false" afterPath="$PROJECT_DIR$/../Module 4/DemoFiles/UploadMultiFile/CGDN-Spring-UploadMultiFiles" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1m07TYzNh0gxp3PX8zqac4XgLTz" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="autoscrollToSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../case_study_servelt_jsp" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4e8a9128-9f11-42bd-9a24-86a817ff6d8e" name="Default Changelist" comment="" />
+      <created>1608618662791</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1608618662791</updated>
+      <workItem from="1608618664012" duration="10000" />
+      <workItem from="1611730706034" duration="14000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="463" y="120" key="FileChooserDialogImpl" timestamp="1611730718944">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="463" y="120" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1611730718944" />
+  </component>
+</project>

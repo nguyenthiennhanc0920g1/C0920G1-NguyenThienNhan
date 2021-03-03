@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>K</title>
+</head>
+<body>
+    <script>
+        // let arr = [1, 2, 4, 5, 3, 12, 32, 44];
+        // let k = 3;
+        // for (let i = k; i < arr.length - k + 1; i++){
+        //     arr[i] = arr[i+1];
+        // }
+        // alert(arr);
+
+        let arr = [1, 2, 3, 5, 6, 7, 8, 9];
+        let k = 3;
+        for (let i = arr.length; i > k; i--){
+            arr[i] = arr[i-1];
+        }
+        arr[k] = 4;
+        alert(arr);
+    </script>
+</body>
+</html>

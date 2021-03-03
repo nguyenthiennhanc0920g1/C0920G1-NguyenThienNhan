@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai 2</title>
+</head>
+<body>
+    <script>
+        function elementMax(arr) {
+            let max = arr[0];
+            let k = 0;
+            for (let i = k; i < arr.length; i++){
+                if (max < arr[i]){
+                    max = arr[i];
+                    k = i;
+                }
+            }
+            alert(max + ' and ' + k);
+        }
+        let arrNum = [1, 1111, 12, 2111, 34111, 115, 34, 111, 222];
+        elementMax(arrNum);
+    </script>
+</body>
+</html>

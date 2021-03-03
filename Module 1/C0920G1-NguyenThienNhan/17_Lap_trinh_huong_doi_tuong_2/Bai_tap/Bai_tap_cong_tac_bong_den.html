@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lamp</title>
+</head>
+<body>
+    <h3>Turn on / turn off the lamp</h3>
+    <img src="" id="https://files.slack.com/files-tmb/TEBPXS5HQ-F01C3QUKLLB-b498e10101/pic_bulboff_360.gifamp">
+    <br/>
+    <button id="switch" onclick="turnOn_turnOff_lamp()">Turn on / off</button>
+    <h4 id="result">The lamp is turning off</h4>
+    <script>
+        class SwitchButton{
+            constructor(status) {
+                this.status = status;
+            }
+            turnOn_turnOff(){
+                this.status = !this.status;
+            };
+        }
+        class Light{
+            constructor(button) {
+                this.button = button;
+            }
+            switch(){
+                if (this.button.status === true){
+                    document.getElementById('lamp').src = "https://files.slack.com/files-tmb/TEBPXS5HQ-F01C9PGQY84-e5c2ad6037/pic_bulbon_360.gif";
+                    document.getElementById('result').innerHTML = 'The lamp is turning on'
+                }
+                else {
+                    document.getElementById('lamp').src = "https://files.slack.com/files-tmb/TEBPXS5HQ-F01C3QUKLLB-b498e10101/pic_bulboff_360.gif";
+                    document.getElementById('result').innerHTML = 'The lamp is turning off'
+                }
+            }
+        }
+        let switchButton1 = new SwitchButton(false);
+        let lamp = new Light(switchButton1);
+        function turnOn_turnOff_lamp() {
+            switchButton1.turnOn_turnOff();
+            lamp.switch();
+        }
+    </script>
+</body>
+</html>

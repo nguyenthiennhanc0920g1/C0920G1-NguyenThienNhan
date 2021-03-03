@@ -1,0 +1,23 @@
+<p>Hello {{name}}</p>
+<p>Hello {{age}}</p>
+<p>car</p>
+<div *ngFor="let car of cars">
+  <li>{{car}}</li>
+</div>
+<div>
+  <select>
+  <option *ngFor="let car of cars"> {{car}}</option>
+  </select>
+</div>
+
+<div>
+  <span *ngIf="age > 18">ban qua gia</span>
+  <span *ngIf="age <= 18">ban duoi 18 tuoi</span>
+  <ng-template></ng-template>
+</div>
+
+<div>
+  <input [(ngModel)]="name">
+</div>
+
+<button (click)="tangTuoi()" >Tang age</button>

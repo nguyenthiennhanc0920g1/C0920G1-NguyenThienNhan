@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form th:action="@{/home}" method="GET">
+    <h1 style="text-align: center">Translation</h1>
+    English<input th:name="eng">
+    <button type="submit">Translate</button>
+    </br>
+    </br>
+    <p>Vietnamese</p>
+    <p th:text="${vn}"></p>
+</form>
+</body>
+</html>

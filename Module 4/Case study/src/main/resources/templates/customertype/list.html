@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Danh sách loại khách hàng</h1></br>
+<a href="/customertype/new">Thêm loại khách hàng</a>
+<form>
+    <input type="text">
+    <button type="submit">Tìm kiếm</button>
+</form>
+<form>
+    <table border="1">
+        <tr>
+            <td>Customer type id</td>
+            <td>Customer type name</td>
+        </tr>
+        <tr th:each="customertype : ${list}">
+            <td th:text="${customertype.getCustomerTypeId()}"></td>
+            <td th:text="${customertype.getCustomerTypeName()}"></td>
+            <td>
+                <a th:href="@{'/customertype/getById/' + ${customertype.getCustomerTypeId()}}">Sửa</a>
+                <a th:href="@{'/customertype/delete/' + ${customertype.getCustomerTypeId()}}">Xóa</a>
+            </td>
+        </tr>
+    </table>
+    <a th:href="@{/}">Back</a>
+    <h3 th:if="${successMsg}" th:text="${successMsg}" style="color: red"></h3>
+</form>
+</body>
+</html>

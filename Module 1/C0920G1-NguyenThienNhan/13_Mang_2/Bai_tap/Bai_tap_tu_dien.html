@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dictionary</title>
+</head>
+<body>
+    <form>
+        <table border="1" cellpadding="10" cellspacing="0">
+            <tr>
+                <th>Viet</th>
+                <th>Anh</th>
+            </tr>
+            <tr>
+                <td><input type="text" id="viet"></td>
+                <td><input type="text" id="anh"></td>
+            </tr>
+            <tr style="text-align: center">
+                <td><button type="button" onclick="vToA()">V &rarr; A</button></td>
+                <td><button type="button" onclick="aToV()">A &rarr; V</button></td>
+            </tr>
+            <tr>
+                <td>Ket qua</td>
+                <td id="result"></td>
+            </tr>
+        </table>
+    </form>
+    <script>
+        let viet = ['xin chào', 'tạm biệt'];
+        let anh = ['hello', 'goodbye'];
+        let vocabulary = document.getElementById('anh').value;
+        function vToA() {
+            let tuVung = document.getElementById('viet').value;
+            switch (tuVung) {
+                case viet[0]:
+                {
+                    document.getElementById('result').innerHTML = anh[0];
+                    break;
+                }
+                case viet[1]:
+                    document.getElementById('result').innerHTML = anh[1];
+                    break;
+            }
+        }
+        function aToV() {
+            let vocabulary = document.getElementById('anh').value;
+            switch (vocabulary) {
+                case anh[0]:
+                {
+                    document.getElementById('result').innerHTML = viet[0];
+                    break;
+                }
+                case anh[1]:
+                    document.getElementById('result').innerHTML = viet[1];
+                    break;
+            }
+        }
+    </script>
+</body>
+</html>

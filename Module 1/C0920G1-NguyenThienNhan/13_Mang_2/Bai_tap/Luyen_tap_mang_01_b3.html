@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai 3</title>
+</head>
+<body>
+    <script>
+        function elementMax(arr) {
+            let max = arr[0];
+            for (let i = 0; i < arr.length; i++){
+                if (max < arr[i]){
+                    max = arr[i];
+                }
+            }
+            alert(max);
+            let sum = 0;
+            let average = 0;
+            for (let i = 0; i < arr.length; i++){
+                sum += arr[i];
+            }
+            average = sum / arr.length;
+            alert(average);
+        }
+        let arrNum = [1, 1, 2, 1, 3, 3, 3, 3, 1];
+        elementMax(arrNum);
+    </script>
+</body>
+</html>

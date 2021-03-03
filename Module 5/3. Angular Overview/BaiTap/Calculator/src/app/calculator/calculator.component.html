@@ -1,0 +1,16 @@
+<h1>CALCULATOR</h1>
+<label>Number 1:
+<input type = "text" [(ngModel)]="number1">
+</label>
+<label>Number 2:
+  <input type = "text" [(ngModel)]="number2">
+</label>
+<br>
+<button type = "button" (click)="summation()">+</button>
+<button type = "button" (click)="subtraction()">-</button>
+<button type = "button" (click)="multiplication()">*</button>
+<button type = "button" (click)="division()">/</button>
+<br>
+<label>Result:
+<input type = "text" [value]="result">
+</label>

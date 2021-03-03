@@ -1,0 +1,37 @@
+{
+  "customerList": [
+    {
+      "id": 2,
+      "idCustomer": 2,
+      "nameCustomer": "Nguyen Quoc Hiep",
+      "dayOpen": "01/01/2019",
+      "dayStart": "01/01/2020",
+      "kyHan": 12,
+      "soTienGui": 10000000,
+      "laiSuat": 8,
+      "uuDai": "Ao mua"
+    },
+    {
+      "id": 3,
+      "idCustomer": 3,
+      "nameCustomer": "Nguyen Quoc Khanh",
+      "dayOpen": "01/01/2019",
+      "dayStart": "01/01/2020",
+      "kyHan": 12,
+      "soTienGui": 10000000,
+      "laiSuat": 8,
+      "uuDai": "Ao mua"
+    },
+    {
+      "id": 4,
+      "idCustomer": 4,
+      "nameCustomer": "Nguyen Thanh Long",
+      "dayOpen": "01/01/2019",
+      "dayStart": "01/01/2020",
+      "kyHan": 12,
+      "soTienGui": 10000000,
+      "laiSuat": 8,
+      "uuDai": "Ao mua"
+    }
+  ]
+}

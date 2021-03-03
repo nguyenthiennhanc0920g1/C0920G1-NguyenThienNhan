@@ -1,0 +1,41 @@
+<h3>Customer List</h3>
+<a routerLink="/customer/create">Add new customer</a>
+<label style="float: right">
+  <button>Search</button>
+  <input type="text" placeholder="Search by name..." [(ngModel)]="term">
+</label>
+<table class="table">
+  <tr>
+    <th>Id</th>
+    <th>Name</th>
+    <th>Birthday</th>
+    <th>Gender</th>
+    <th>Id card</th>
+    <th>Phone</th>
+    <th>Email</th>
+    <th>Address</th>
+    <th>Type</th>
+    <th colspan="3">Action</th>
+  </tr>
+  <tr *ngFor="let customer of customers|filter: term">
+    <td>{{customer.customerId}}</td>
+    <td>{{customer.customerName}}</td>
+    <td>{{customer.customerBirthday}}</td>
+    <td *ngIf="customer.customerGender === 1">Male</td>
+    <td *ngIf="customer.customerGender === 2">Female</td>
+    <td>{{customer.customerIdCard}}</td>
+    <td>{{customer.customerPhone}}</td>
+    <td>{{customer.customerEmail}}</td>
+    <td>{{customer.customerAddress}}</td>
+    <td>{{customer.customerTypeId.nameCustomerType}}</td>
+    <td>
+      <button class="btn-primary">Detail</button>
+    </td>
+    <td>
+      <button class="btn-dark">Edit</button>
+    </td>
+    <td>
+      <button class="btn-danger">Delete</button>
+    </td>
+  </tr>
+</table>

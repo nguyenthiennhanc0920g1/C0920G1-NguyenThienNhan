@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Temperature</title>
+</head>
+<body>
+    <script>
+        class Temperature{
+            constructor(_celsius, _fahrenheit, _kelvin) {
+                this.celsius = _celsius;
+                this.fahrenheit = _fahrenheit;
+                this.kelvin = _kelvin;
+            };
+            getFahrenheit(){
+                return 1.8 * this.celsius + 32;
+            };
+            getKelvin(){
+                return this.celsius + 273.15;
+            };
+        }
+        let temperature1 = new Temperature(25, '', '');
+        let fahrenheit = temperature1.getFahrenheit();
+        alert('F: ' + fahrenheit);
+        let kelvin = temperature1.getKelvin();
+        alert('K: ' + kelvin);
+
+        // let temperature2 = {
+        //     celsius: 30,
+        //     fahrenheit: 0,
+        //     kelvin: 0
+        // }
+    </script>
+</body>
+</html>

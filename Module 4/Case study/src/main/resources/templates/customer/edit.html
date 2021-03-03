@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="fragment/banner :: head"></head>
+<body class="theme-grey">
+<div th:replace="fragment/banner :: banner"></div>
+<div th:replace="fragment/menu :: menu"></div>
+<section class="content">
+    <div class="container-fluid">
+        <div th:replace="fragment/dashboard :: dashboard"></div>
+        <div class="row clearfix">
+            <h1>Sửa thông tin khách hàng</h1>
+            <form action="/customer/update" method="POST" th:object="${customer}">
+                <table class="table table-bordered table-hover">
+                    <tr>
+                        <input type="hidden" th:field="*{customerId}">
+                        <td>Customer type id:</td>
+                        <td>
+                            <label for="customerType">
+                                <select id="customerType" name="customerType" th:field="*{customerType}">
+                                    <option th:each="Ct: ${customerTypeList}"
+                                            th:text="${Ct.getCustomerTypeName()}"
+                                            th:value="${Ct.getCustomerTypeId()}"></option>
+                                </select>
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Customer name:</td>
+                        <td><input onblur="checkX(fullName)" id="name" type="text" th:field="*{customerName}"></td>
+                        <td style="color: red" th:if="${#fields.hasErrors('customerName')}" th:errors="*{customerName}">
+                            First Name Error
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Customer birthday:</td>
+                        <td><input type="text" th:field="*{customerBirthday}" placeholder="dd/mm/yyyy"></td>
+                        <td style="color: red" th:if="${#fields.hasErrors('customerBirthday')}"
+                            th:errors="*{customerBirthday}">First
+                            Birthday Error
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Customer gender:</td>
+                        <td>
+                            <input class="form-check-input" id="male" name="gender" type="radio" th:field="*{gender}"
+                                   value="Nam"/>
+                            <label for="male">Male</label>
+                            <input class="form-check-input" id="female" name="gender" type="radio" th:field="*{gender}"
+                                   value="Nữ"/>
+                            <label for="female">Female</label>
+                            <input class="form-check-input" id="lgbt" name="gender" type="radio" th:field="*{gender}"
+                                   value="LGBT"/>
+                            <label for="lgbt">LGBT</label>
+                        </td>
+                        <td style="color: red" th:if="${#fields.hasErrors('gender')}" th:errors="*{gender}">First Gender
+                            Error
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Customer id card:</td>
+                        <td><input type="text" th:field="*{customerIdCard}"></td>
+                        <td style="color: red" th:if="${#fields.hasErrors('customerIdCard')}"
+                            th:errors="*{customerIdCard}">First Id Card
+                            Error
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Customer phone:</td>
+                        <td><input type="text" th:field="*{customerPhone}"></td>
+                        <td style="color: red" th:if="${#fields.hasErrors('customerPhone')}"
+                            th:errors="*{customerPhone}">First Phone
+                            Error
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Customer email:</td>
+                        <td><input type="text" th:field="*{customerEmail}"></td>
+                        <td style="color: red" th:if="${#fields.hasErrors('customerEmail')}"
+                            th:errors="*{customerEmail}">First Email
+                            Error
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Customer address:</td>
+                        <td><textarea onblur="checkX(address)" id="address" type="text" th:field="*{customerAddress}">
+                        </textarea></td>
+                        <td style="color: red" th:if="${#fields.hasErrors('customerAddress')}"
+                            th:errors="*{customerAddress}">First Address
+                            Error
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <button type="submit" class="btn btn-primary">Đồng ý</button>
+                            <a th:href="@{/customer}" type="button" class="btn btn-danger">Hủy bỏ</a>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </div>
+</section>
+<script src="../../js/casestudy.js"></script>
+</body>
+</html>

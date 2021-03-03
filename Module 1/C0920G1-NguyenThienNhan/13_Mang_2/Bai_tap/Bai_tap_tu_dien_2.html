@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dictionary</title>
+</head>
+<body>
+    <form>
+        <table border="1" cellpadding="10" cellspacing="0">
+            <tr>
+                <th>Viet</th>
+                <th>Anh</th>
+            </tr>
+            <tr>
+                <td><input type="text" id="viet"></td>
+                <td><input type="text" id="anh"></td>
+            </tr>
+            <tr style="text-align: center">
+                <td><button type="button" onclick="dich()">V &rarr; A</button></td>
+                <td><button type="button" onclick="trans()">A &rarr; V</button></td>
+            </tr>
+            <tr>
+                <td id="ket qua"></td>
+                <td id="result"></td>
+            </tr>
+        </table>
+    </form>
+    <script>
+        let vietnamese = ['xin chào', 'tạm biệt', 'tên', 'tuổi'];
+        let english = ['hello', 'goodbye', 'name', 'age'];
+        let x = document.getElementById('viet');
+        let y = document.getElementById('anh');
+        function dich() {
+            for (let i = 0; i < vietnamese.length; i++){
+                if(x.value === vietnamese[i]){
+                    document.getElementById('ket qua').innerHTML = english[i];
+                    return true;
+                }
+                else {
+                    document.getElementById('ket qua').innerHTML = 'khong tim thay ket qua';
+                }
+            }
+        }
+        function trans() {
+            for (let i = 0; i < vietnamese.length; i++){
+                if(y.value === english[i]){
+                    document.getElementById('result').innerHTML = vietnamese[i];
+                    return true;
+                }
+                else {
+                    document.getElementById('result').innerHTML = 'khong tim thay ket qua';
+                }
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Result</title>
+</head>
+<body>
+<h1>Họ và tên <span th:text="${user.getName()}"></span></h1>
+<h1>Tuổi <span th:text="${user.getAge()}"></span></h1>
+<h1>Email <span th:text="${user.getEmail()}"></span></h1>
+<h1>Giới tính <span th:text="${user.getGender()}"></span></h1>
+<h1>Ngày sinh <span th:text="${user.getBirthday()}"></span></h1>
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+{
+  "customerList": [
+    {
+      "customerId": 1,
+      "customerName": "nhan",
+      "customerBirthday": "13/12/1993",
+      "customerGender": 1,
+      "customerIdCard": 201682750,
+      "customerPhone": "0935299924",
+      "customerEmail": "nhan@gmail.com",
+      "customerAddress": "nhan 123",
+      "customerTypeId": {
+        "idCustomerType": 1,
+        "nameCustomerType": "member"
+      }
+    },
+    {
+      "customerId": 2,
+      "customerName": "long",
+      "customerBirthday": "13/12/1993",
+      "customerGender": 2,
+      "customerIdCard": 201682750,
+      "customerPhone": "0935299924",
+      "customerEmail": "nhan@gmail.com",
+      "customerAddress": "nhan 123",
+      "customerTypeId": {
+        "idCustomerType": 2,
+        "nameCustomerType": "silver"
+      }
+    }
+  ]
+}
+

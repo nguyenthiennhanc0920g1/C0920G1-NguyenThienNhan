@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="Request_customer.css">
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+    <title>Request 1</title>
+</head>
+<body>
+<div style="width: 100%; height: 150px;">
+    <h1 style="font-size: 50px">MANAGER CUSTOMERS</h1>
+    <h2>FURAMA RESORT</h2>
+</div>
+<div id="content" class="container">
+    <div id="pic">
+        <p style="list-style: none; width: 340%; margin-left: -5px"><img onmouseover="change('one')"
+                                                                         onmouseout="cancelChange('one')" id="one"
+                                                                         style="width: 30%" src="a-13.jpg"></p><br/>
+        <p style="list-style: none; width: 340%; margin-left: -5px; margin-top: -35px"><img onmouseover="change('two')"
+                                                                                            onmouseout="cancelChange('two')"
+                                                                                            id="two" style="width: 30%"
+                                                                                            src="b.jpg"></p><br/>
+        <p style="list-style: none; width: 340%; margin-left: -5px; margin-top: -35px"><img
+                onmouseover="change('three')" onmouseout="cancelChange('three')" id="three" style="width: 30%"
+                src="c.jpg"></p><br/>
+        <p style="list-style: none; width: 340%; margin-left: -5px; margin-top: -35px"><img onmouseover="change('four')"
+                                                                                            onmouseout="cancelChange('four')"
+                                                                                            id="four" style="width: 30%"
+                                                                                            src="d.jpg"></p><br/>
+        <p style="list-style: none; width: 340%; margin-left: -5px; margin-top: -35px"><img onmouseover="change('five')"
+                                                                                            onmouseout="cancelChange('five')"
+                                                                                            id="five" style="width: 30%"
+                                                                                            src="e.jpg"></p>
+    </div>
+    <div id="imgMain">
+        <img style="position: absolute; margin-top: -100px" id="img" src="">
+    </div>
+    <div id="post">
+        <h3 style="text-align: center; font-size: 30px">CUSTOMER INFORMATION</h3>
+        <form id="inputCustomer">
+            <table>
+                <tr>
+                    <td>Full name:</td>
+                    <td><input onblur="checkX(fullName)" id="inName" type="text"></td>
+                </tr>
+                <tr>
+                    <td>Identify card:</td>
+                    <td><input onkeydown="limitMaxText(this, 8); return isNumberKey(this)"
+                               onkeyup="limitMaxText(this, 8)" onblur="limitMinText(this, 0)" id="inIdCard" type="text">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Birthday:</td>
+                    <td><input id="inBirth" type="date"></td>
+                </tr>
+                <tr>
+                    <td>Email:</td>
+                    <td><input onblur="checkEmail()" id="inEmail" type="text"></td>
+                </tr>
+                <tr>
+                    <td>Address:</td>
+                    <td><input onblur="checkX(address)" id="inAddress" type="text"></td>
+                </tr>
+                <tr>
+                    <td>Customer type:</td>
+                    <td>
+                        <label>
+                            <select id="inCustomer">
+                                <option value="Diamond">Diamond</option>
+                                <option value="Platinum">Platinum</option>
+                                <option value="Gold">Gold</option>
+                                <option value="Silver">Silver</option>
+                                <option value="Member">Member</option>
+                            </select>
+                        </label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Discount:</td>
+                    <td><input id="inDiscount" type="text"></td>
+                </tr>
+                <tr>
+                    <td>Quantity included:</td>
+                    <td><input onkeydown="return isNumberKey(this)" id="inQuantity" type="text"></td>
+                </tr>
+                <tr>
+                    <td>Rent day(s):</td>
+                    <td><input onkeydown="return isNumberKey(this)" id="inRentDay" type="text"></td>
+                </tr>
+                <tr>
+                    <td>Type of service:</td>
+                    <td>
+                        <label>
+                            <select id="inService">
+                                <option value="Villa ($500/day)">Villa ($500/day)</option>
+                                <option value="House ($300/day)">House ($300/day)</option>
+                                <option value="Room ($100/day)">Room ($100/day)</option>
+                            </select>
+                        </label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Type of room:</td>
+                    <td>
+                        <label>
+                            <select id="inRoom">
+                                <option value="Vip">Vip</option>
+                                <option value="Business">Business</option>
+                                <option value="Normal">Normal</option>
+                            </select>
+                        </label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button type="button" onclick="checkData(); total(); checkBirth()" value="accept">Accept
+                        </button>
+                    </td>
+                    <td>
+                        <button type="reset" id="reset" value="reset">Reset</button>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    <div id="sidebar">
+        <script>
+            document.getElementById('sidebar').style.display = 'none';
+        </script>
+        <h3 style="text-align: center; font-size: 30px">CONFIRM CUSTOMER INFORMATION</h3>
+        <form>
+            <table>
+                <tr>
+                    <td>Full name:</td>
+                    <td id="outName"></td>
+                </tr>
+                <tr>
+                    <td>Identify card:</td>
+                    <td id="outIdCard"></td>
+                </tr>
+                <tr>
+                    <td>Birthday:</td>
+                    <td id="outBirth"></td>
+                </tr>
+                <tr>
+                    <td>Email:</td>
+                    <td id="outEmail"></td>
+                </tr>
+                <tr>
+                    <td>Address:</td>
+                    <td id="outAddress"></td>
+                </tr>
+                <tr>
+                    <td>Customer type:</td>
+                    <td id="outCustomer"></td>
+                </tr>
+                <tr>
+                    <td>Discount:</td>
+                    <td id="outDiscount"></td>
+                </tr>
+                <tr>
+                    <td>Quantity included:</td>
+                    <td id="outQuantity"></td>
+                </tr>
+                <tr>
+                    <td>Rent day(s):</td>
+                    <td id="outRentDay"></td>
+                </tr>
+                <tr>
+                    <td>Type of service:</td>
+                    <td id="outService"></td>
+                </tr>
+                <tr>
+                    <td>Type of room:</td>
+                    <td id="outRoom"></td>
+                </tr>
+                <tr>
+                    <td><strong>Pay order:</strong></td>
+                    <td id="pay"></td>
+                </tr>
+                <tr>
+                    <td>
+                        <button type="button" onclick="editData()" id="edit">Edit</button>
+                    </td>
+                    <td>
+                        <button type="button" onclick="finish()" id="complete">Complete</button>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    <div id="displayCustomer">
+        <form>
+            <h3 style="text-align: center; font-size: 35px">Display Customer</h3>
+            <ol id="list"></ol>
+            <button type="button" id="editCustomer" onclick="editCustomers()">Edit</button>
+            <button type="button" id="delete" onclick="deleteCustomer()">Delete</button>
+            <button type="button" id="detail" onclick="detailCustomer()">Detail</button>
+        </form>
+    </div>
+    <div id="detailCustomer">
+        <form>
+            <h3 style="text-align: center; font-size: 35px">Detail Customer</h3>
+            <ul id="detailList"></ul>
+        </form>
+    </div>
+</div>
+</body>
+<script src="Request_customer.js"></script>
+</html>

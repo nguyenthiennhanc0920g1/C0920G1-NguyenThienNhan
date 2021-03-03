@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+​
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+​
+<body>
+<img src="" id="carA" onclick="onchangeImage(1)" width="250 px" height="600 px">
+<img src="" id="carB" onclick="onchangeImage(2)" width="250 px" height="600 px">
+<img src="" id="carC" onclick="onchangeImage(3)" width="250 px" height="600 px">
+<img src="" id="carD" onclick="onchangeImage(4)" width="250 px" height="600 px">
+<img src="" id="carE" onclick="onchangeImage(5)" width="250 px" height="600 px">
+</body>
+<script>
+    let imageA = document.getElementById("carA");
+    let imageB = document.getElementById("carB");
+    let imageC = document.getElementById("carC");
+    let imageD = document.getElementById("carD");
+    let imageE = document.getElementById("carE");
+    init(1);
+    init(2);
+    init(3);
+    function init(i) {
+        let randomA = Math.floor(Math.random() * 3 + 1);
+        switch (i) {
+            case 1:
+                switch (randomA) {
+                    case 1:
+                        imageA.src = "Images/Hinh%201a.png";
+                }
+        }
+    }
+    function onchangeImage(num) {
+        switch (num) {
+            case 1:
+                if (imageA.getAttribute("src") === "Images/Hinh%201a.png")
+                    imageA.src = "Images/Hinh%202a.png";
+                else if (imageA.getAttribute("src") === "Images/Hinh%202a.png") {
+                    imageA.src = "Images/Hinh%203a.png";
+                } else if (imageA.getAttribute("src") === "Images/Hinh%203a.png") {
+                    imageA.src = "Images/Hinh%201a.png";
+                }
+                checkImage();
+                break;
+            case 2:
+                if (imageB.getAttribute("src") === "Images/Hinh%201b.png")
+                    imageB.src = "Images/Hinh%202b.png";
+                else if (imageB.getAttribute("src") === "Images/Hinh%202b.png") {
+                    imageB.src = "Images/Hinh%203b.png";
+                } else if (imageB.getAttribute("src") === "Images/Hinh%203b.png") {
+                    imageB.src = "Images/Hinh%201b.png";
+                }
+                checkImage();
+                break;
+            case 3:
+                if (imageC.getAttribute("src") === "Images/Hinh%201c.png")
+                    imageC.src = "Images/Hinh%202c.png"
+                else if (imageC.getAttribute("src") === "Images/Hinh%202c.png") {
+                    imageC.src = "Images/Hinh%203c.png"
+                } else if (imageC.getAttribute("src") === "Images/Hinh%203c.png") {
+                    imageC.src = "Images/Hinh%201c.png"
+                }
+                checkImage();
+                break;
+            default:
+                break;
+        }
+    }
+    function checkImage() {
+        if (imageA.getAttribute("src") === "Images/Hinh%201a.png" &&
+            imageB.getAttribute("src") === "Images/Hinh%201b.png" &&
+            imageC.getAttribute("src") === "Images/Hinh%201c.png")
+        {alert("Hinh A")}
+
+</script>
+</html>

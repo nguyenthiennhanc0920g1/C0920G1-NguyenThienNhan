@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="fragment/banner :: head"></head>
+<body class="theme-grey">
+<div th:replace="fragment/banner :: banner"></div>
+<section class="content">
+    <div style="align-content: center" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <h2>Click here</h2>
+        <a th:href="@{/list}" type="button" class="btn btn-primary">Danh sách</a>
+    </div>
+</section>
+<div th:replace="fragment/banner :: script"></div>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai 5</title>
+</head>
+<body>
+    <script>
+        let toan;
+        let ly;
+        let hoa;
+        let anh;
+        toan = parseFloat(prompt('Nhap diem toan:'));
+        ly = parseFloat(prompt('Nhap diem ly:'));
+        hoa = parseFloat(prompt('Nhap diem hoa:'));
+        anh = parseFloat(prompt('Nhap diem anh:'));
+        let diemtrungbinh = ((toan + ly + hoa + anh)/4);
+
+        if (diemtrungbinh >= 8){alert('hoc sinh gioi')}
+        else if(diemtrungbinh >= 6){alert('hoc sinh kha')}
+        else if(diemtrungbinh >= 4){alert('hoc sinh trung binh')}
+        else {alert('hoc sinh yeu')}
+    </script>
+</body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="fragment/banner :: head"></head>
+<body class="theme-grey">
+<div th:replace="fragment/banner :: banner"></div>
+<div th:replace="fragment/menu :: menu"></div>
+<section class="content">
+    <div class="container-fluid">
+        <div th:replace="fragment/dashboard :: dashboard"></div>
+        <div class="row clearfix">
+            <h1>Sửa thông tin nhân viên</h1>
+            <form action="/employee/update" method="POST" th:object="${employee}">
+                <table class="table table-bordered table-hover">
+                    <input type="hidden" th:field="*{employeeId}">
+                    <tr>
+                        <td>Employee name:</td>
+                        <td><input onblur="checkX(fullName)" id="name" type="text" th:field="*{employeeName}"></td>
+                        <td style="color: red" th:if="${#fields.hasErrors('employeeName')}" th:errors="*{employeeName}">
+                            First Name Error
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Employee birthday:</td>
+                        <td><input type="text" th:field="*{employeeBirthday}" placeholder="dd/mm/yyyy"></td>
+                        <td style="color: red" th:if="${#fields.hasErrors('employeeBirthday')}"
+                            th:errors="*{employeeBirthday}">First Birthday Error
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Employee gender:</td>
+                        <td>
+                            <input class="form-check-input" id="male" name="gender" type="radio" th:field="*{gender}"
+                                   value="Nam"/>
+                            <label for="male">Male</label>
+                            <input class="form-check-input" id="female" name="gender" type="radio" th:field="*{gender}"
+                                   value="Nữ"/>
+                            <label for="female">Female</label>
+                            <input class="form-check-input" id="lgbt" name="gender" type="radio" th:field="*{gender}"
+                                   value="LGBT"/>
+                            <label for="lgbt">LGBT</label>
+                        </td>
+                        <td style="color: red" th:if="${#fields.hasErrors('gender')}" th:errors="*{gender}">
+                            First Gender Error
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Employee id card:</td>
+                        <td><input type="text" th:field="*{employeeIdCard}"></td>
+                        <td style="color: red" th:if="${#fields.hasErrors('employeeIdCard')}"
+                            th:errors="*{employeeIdCard}">
+                            First Id Card Error
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Employee salary:</td>
+                        <td><input type="text" th:field="*{employeeSalary}"></td>
+                        <td style="color: red" th:if="${#fields.hasErrors('employeeSalary')}"
+                            th:errors="*{employeeSalary}">
+                            First Id Card Error
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Employee phone:</td>
+                        <td><input type="text" th:field="*{employeePhone}"></td>
+                        <td style="color: red" th:if="${#fields.hasErrors('employeePhone')}"
+                            th:errors="*{employeePhone}">
+                            First Phone Error
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Employee email:</td>
+                        <td><input type="text" th:field="*{employeeEmail}"></td>
+                        <td style="color: red" th:if="${#fields.hasErrors('employeeEmail')}"
+                            th:errors="*{employeeEmail}">
+                            First Email Error
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Employee address:</td>
+                        <td><textarea onblur="checkX(address)" id="address" type="text" th:field="*{employeeAddress}">
+
+                        </textarea></td>
+                        <td style="color: red" th:if="${#fields.hasErrors('employeeAddress')}"
+                            th:errors="*{employeeAddress}">
+                            First Address Error
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Employee division:</td>
+                        <td>
+                            <label for="division">
+                                <select id="division" name="division" th:field="*{division}">
+                                    <option th:each="d: ${division}"
+                                            th:text="${d.getDivisionName()}"
+                                            th:value="${d.getDivisionId()}"></option>
+                                </select>
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Employee position:</td>
+                        <td>
+                            <label for="position">
+                                <select id="position" name="position" th:field="*{position}">
+                                    <option th:each="p: ${position}"
+                                            th:text="${p.getPositionName()}"
+                                            th:value="${p.getPositionId()}"></option>
+                                </select>
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Employee education degree:</td>
+                        <td>
+                            <label for="educationDegree">
+                                <select id="educationDegree" name="educationDegree" th:field="*{educationDegree}">
+                                    <option th:each="d: ${educationDegree}"
+                                            th:text="${d.getEducationDegreeName()}"
+                                            th:value="${d.getEducationDegreeId()}"></option>
+                                </select>
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <button type="submit" class="btn btn-primary">Đồng ý</button>
+                            <a th:href="@{/employee}" type="button" class="btn btn-danger">Hủy bỏ</a>
+                        </td>
+                    </tr>
+                </table>
+        </div>
+    </div>
+</section>
+<script src="../../js/casestudy.js"></script>
+</body>
+</html>

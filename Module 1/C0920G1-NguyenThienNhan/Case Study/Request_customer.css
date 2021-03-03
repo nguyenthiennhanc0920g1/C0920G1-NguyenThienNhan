@@ -1,0 +1,69 @@
+body {
+    background-image: url("3.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.container {
+    width: 100%;
+    height: 500px;
+}
+
+#pic {
+    width: 10%;
+    height: 500px;
+    float: left;
+}
+
+#post {
+    width: 42.5%;
+    height: 500px;
+    float: left;
+    font-size: 26px;
+    border: solid royalblue;
+    margin: 5px;
+    border-radius: 30px;
+}
+
+#sidebar {
+    width: 42.5%;
+    height: 500px;
+    float: left;
+    font-size: 26px;
+    border: solid royalblue;
+    margin: 5px;
+    border-radius: 30px;
+}
+
+#displayCustomer {
+    width: 22%;
+    height: 500px;
+    float: left;
+    font-size: 26px;
+    text-align: center;
+    border: solid royalblue;
+    margin: 4px;
+    border-radius: 30px;
+}
+
+#detailCustomer {
+    width: 22%;
+    height: 500px;
+    float: right;
+    font-size: 26px;
+    border: solid royalblue;
+    margin: 4px;
+    border-radius: 30px;
+}
+
+#imgMain img {
+    width: 1000px;
+}
+
+table {
+    border-collapse: collapse;
+    margin-left: 100px;
+}
+li{
+    text-align: left;
+ }

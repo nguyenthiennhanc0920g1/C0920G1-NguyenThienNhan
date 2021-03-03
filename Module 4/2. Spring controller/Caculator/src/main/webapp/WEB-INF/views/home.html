@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Caculator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+</head>
+<body>
+<div class="container">
+    <form th:action="@{/action}" method="GET">
+        <h1 style="text-align: center">Caculator</h1>
+        <input type="text" name="num1">
+        <input type="text" name="num2"></br></br>
+        <button value="Addition" th:name="" th:field="" name="act" class="btn btn-primary">Addition (+)</button>
+        <button value="Subtraction" name="act" class="btn btn-primary">Subtraction (-)</button>
+        <button value="Multiplication" name="act" class="btn btn-primary">Multiplication (x)</button>
+        <button value="Division" name="act" class="btn btn-primary">Division (/)</button>
+        </br>
+        <h3>Result</h3>
+        <p th:text="${result}"></p>
+    </form>
+</div>
+<!-- Thư viện jquery đã nén phục vụ cho bootstrap.min.js  -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!-- Thư viện popper đã nén phục vụ cho bootstrap.min.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
+<!-- Bản js đã nén của bootstrap 4, đặt dưới cùng trước thẻ đóng body-->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+</body>
+</html>

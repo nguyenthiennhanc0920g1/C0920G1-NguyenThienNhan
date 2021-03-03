@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai 5</title>
+</head>
+<body>
+    <script>
+        let arr1 = ['Polaris', 'Aldebaran', 'Deneb', 'Vega', 'Altair', 'Dubhe', 'Regulus'];
+        let arr2 = ['Ursa Minor', 'Tarurus', 'Cygnus', 'Lyra', 'Aquila', 'Ursa Major', 'Leo'];
+        function search(str) {
+            let i = 0;
+            let boo = false;
+            for (i = 0; i < arr1.length; i++) {
+                if (str === arr1[i]) {
+                    boo = true;
+                    break;
+                }
+            }
+            if (boo === true){
+                alert(arr2[i])
+            }
+            else {
+                alert('NULL')
+            }
+        }
+        let star = prompt('Input name of star');
+        search(star);
+        // if (arr1.indexOf(str) !== -1){
+        //     i = arr1.indexOf(str);
+        //     alert(arr2[i]);
+        //     break;
+        // }
+        // else {
+        //     alert('Null');
+        // }
+    </script>
+</body>
+</html>

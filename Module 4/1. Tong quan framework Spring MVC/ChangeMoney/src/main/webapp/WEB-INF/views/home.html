@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="/home" method="GET">
+    <h1 style="text-align: center">Change money</h1>
+    VND<input type="text" th:name="vnd">
+    <button type="submit">Change</button>
+    <button type="reset">Reset</button>
+    </br>
+    </br>
+    <p>USD</p>
+    <p th:text="${usd}"></p>
+</form>
+</body>
+</html>

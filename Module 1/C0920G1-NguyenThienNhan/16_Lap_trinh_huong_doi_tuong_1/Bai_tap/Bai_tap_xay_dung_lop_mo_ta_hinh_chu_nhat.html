@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rectangle</title>
+</head>
+<body>
+    <script>
+        class Rectangle {
+            constructor(_length, _width) {
+                this.length = _length;
+                this.width = _width;
+            };
+            getArea(){
+                return this.length * this.width;
+            };
+            getPerimeter(){
+                return (this.length + this.width) * 2;
+            };
+            setLength(_length){
+                this.length = _length;
+            };
+            setWight(_width){
+                this.width = _width;
+            };
+        }
+        let rectangle = new Rectangle(5, 10);
+        alert(rectangle.length + '/' + rectangle.width);
+        let length = rectangle.setLength(10);
+        let width = rectangle.setWight(20);
+        alert('a = ' + rectangle.length + ' / ' + 'b = ' + rectangle.width);
+        let area = rectangle.getArea();
+        alert(area);
+        let perimeter = rectangle.getPerimeter();
+        alert(perimeter);
+    </script>
+</body>
+</html>

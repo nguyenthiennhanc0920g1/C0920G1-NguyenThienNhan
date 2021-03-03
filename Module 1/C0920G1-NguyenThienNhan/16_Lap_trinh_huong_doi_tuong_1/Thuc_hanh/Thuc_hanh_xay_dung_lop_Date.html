@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Class Date</title>
+</head>
+<body>
+    <script>
+        class MyDate {
+            constructor(day, month, year) {
+                this.day = day;
+                this.month = month;
+                this.year = year;
+            };
+            getDay() {
+                return this.day;
+            };
+            getMonth() {
+                return this.month;
+            };
+            getYear() {
+                return this.year;
+            };
+            setDate(day, month, year) { //nên khai báo hàm set riêng lẻ cho từng thuộc tính.
+                this.day = day;
+                this.month = month;
+                this.year = year;
+            };
+            toString() {
+                return this.day + '/' + this.month + '/' + this.year;
+            };
+        }
+        let date = new MyDate(2,2,2020);
+        alert(date.toString());
+        date.setDate(3,3,2030);
+        alert(date.toString());
+        let day = date.getDay();
+        alert(day);
+
+    </script>
+</body>
+</html>

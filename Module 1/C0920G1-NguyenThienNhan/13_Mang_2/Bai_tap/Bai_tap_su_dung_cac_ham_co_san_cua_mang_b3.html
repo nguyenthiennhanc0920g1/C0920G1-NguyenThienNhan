@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai 3</title>
+</head>
+<body>
+    <script>
+        let str = prompt('Input str:');
+        let UPPER = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+        let LOWER = 'abcdefghijklmnopqrstuvwxyz';
+        let result = [];
+
+        for(let i=0; i<str.length; i++)
+        {
+            if(UPPER.indexOf(str[i]) !== -1)
+            {
+                result.push(str[i].toLowerCase());
+            }
+            else if(LOWER.indexOf(str[i]) !== -1)
+            {
+                result.push(str[i].toUpperCase());
+            }
+            else
+            {
+                result.push(str[i]);
+            }
+        }
+        document.write(result.join(''));
+
+    </script>
+</body>
+</html>

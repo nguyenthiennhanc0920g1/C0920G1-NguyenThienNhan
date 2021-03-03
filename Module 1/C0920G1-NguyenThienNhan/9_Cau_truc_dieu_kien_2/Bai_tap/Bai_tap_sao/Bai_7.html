@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai 7</title>
+</head>
+<body>
+    <script>
+        function giaiPt(a, b, c, x1, x2) {
+            let delta = b*b - 4*a*c;
+            if (delta < 0){
+                x1 = 0;
+                x2 = 0;
+            }
+            else  if (delta === 0){
+                x1  = -b / (2*a);
+                x2 = x1;
+            }
+            else {
+                delta = Math.sqrt(delta);
+                x1 = (-b + delta) / (2*a);
+                x2 = (-b - delta) / (2*a);
+            }
+        }
+        do {
+            let a = parseFloat(prompt('Input a (a != 0)'));
+            let b = parseFloat(prompt('Input b'));
+            let c = parseFloat(prompt('Input c'));
+            let x1;
+            let x2;
+        }
+        while (!a);
+            let numNo = giaiPt(a, b, c, x1, x2);
+            if (numNo === 0){
+                alert('Phuong trinh vo nghiem');
+            }
+            else if (numNo === 1){
+                alert('Phuong trinh co nghiem kep: ' + x1);
+            }
+            else {
+                alert('Phuong trinh co 2 nghiem phan biet: ' + x1 + ' va ' + x2);
+            }
+    </script>
+</body>
+</html>

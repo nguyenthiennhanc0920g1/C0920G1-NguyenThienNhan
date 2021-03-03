@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai 3</title>
+</head>
+<body>
+    <script>
+        function factorial(n) {
+            let result = 0;
+            if (n === 0 || n === 1)
+                return  1;
+            return  n * factorial(n-1);
+        }
+        let num = parseInt(prompt('Input num'));
+        alert(factorial(num));
+    </script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Day of Month</title>
+</head>
+<body>
+    <form style="margin: 20px; padding: 50px">
+        <input type="number" id="month">
+        <button type="button" onclick="dayofmonth()">Tính số ngày</button>
+        <p id="display"></p>
+    </form>
+    <script>
+        function dayofmonth () {
+            let month = parseInt(document.getElementById('month').value);
+            let result;
+            switch (month) {
+                case 1:
+                case 3:
+                case 5:
+                case 7:
+                case 8:
+                case 10:
+                case 12: {
+                    result = 'Thang ' + month + ' co 31 ngay';
+                    break;
+                }
+                case 4:
+                case 6:
+                case 9:
+                case 11: {
+                    result = 'Thang ' + month + ' co 30 ngay';
+                    break;
+                }
+                case 2: {
+                    result = 'Thang ' + month + ' co 28/29 ngay';
+                    break;
+                }
+                default: {
+                    result = 'Nhap sai';
+                }
+            }
+            document.getElementById('display').innerHTML = result;
+        }
+    </script>
+</body>
+</html>

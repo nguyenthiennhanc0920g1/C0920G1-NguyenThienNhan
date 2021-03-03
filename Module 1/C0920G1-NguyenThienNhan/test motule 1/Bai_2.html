@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function lamTron(n) {
+        while (n < 0 || n > 100 || isNaN(n)) {
+            alert('Nhập sai điểm:');
+            n = parseInt(prompt('Nhập điểm số:'));
+        }
+        let boiSo = n;
+        while (boiSo % 5 !== 0) {
+            boiSo++;
+        }
+        let khoangCach = boiSo - n;
+        if (khoangCach < 3) {
+            n = boiSo;
+        }
+        if (n < 48) {
+            alert("trượt rồi");
+            console.log(n);
+        } else if (n < 50) {
+            alert('trượt rồi');
+            console.log(n);
+        } else {
+            alert('đậu rồi');
+            console.log(n);
+        }
+    }
+
+    n = parseInt(prompt('Nhập điểm số:'));
+    lamTron(n);
+</script>
+</body>
+</html>

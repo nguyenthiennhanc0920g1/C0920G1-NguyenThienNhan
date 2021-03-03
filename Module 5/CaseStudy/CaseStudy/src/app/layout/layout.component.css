@@ -1,0 +1,15 @@
+.header {
+  height: 80px;
+  width: auto;
+  background: lightgrey;
+}
+.header img {
+  height: 80px;
+  width: 80px;
+  float: left;
+}
+.header p {
+  float: right;
+}
+
+/*# sourceMappingURL=layout.component.css.map */

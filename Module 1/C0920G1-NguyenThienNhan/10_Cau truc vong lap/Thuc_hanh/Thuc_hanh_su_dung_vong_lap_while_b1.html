@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai 1</title>
+</head>
+<body>
+    <script>
+        let num = 0;
+        let total = 0;
+        while (true){
+            num = parseInt(prompt('Input num:'));
+            if(num ===(-1)) {
+                break;
+            }
+            document.write('num: ' + num);
+            document.write('<br>');
+            total += num;
+        }
+        document.write('total: ' + total);
+    </script>
+</body>
+</html>

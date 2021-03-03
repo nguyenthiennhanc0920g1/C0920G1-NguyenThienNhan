@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Nhập thông tin khách hàng</h1>
+<form action="/customertype/create" method="POST" th:object="${customertype}">
+    <table>
+        <tr>
+            <td>Customer type name:</td>
+            <td><input type="text" th:field = "*{customerTypeName}"></td>
+        </tr>
+    </table>
+    <button type="submit">Đồng ý</button>
+    <button type="reset">Hủy bỏ</button>
+</form>
+</body>
+</html>

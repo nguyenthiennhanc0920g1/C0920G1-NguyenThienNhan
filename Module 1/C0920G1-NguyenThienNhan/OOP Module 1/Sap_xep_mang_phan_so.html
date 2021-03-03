@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class PhanSo {
+        constructor(tuSo, mauSo) {
+            this.tu = tuSo;
+            this.mau = mauSo;
+        }
+
+        get float() {
+            return this.tu / this.mau;
+        }
+    }
+
+    let arr = [
+        new PhanSo(7, 6),
+        new PhanSo(4, 6),
+        new PhanSo(1, 1),
+        new PhanSo(2, 6),
+        new PhanSo(3, 6)
+    ];
+    for (let i = 0; i < arr.length; i++) {
+        for (let j = i + 1; j < arr.length; j++) {
+            if (arr[i].float > arr[j].float) {
+                let temp = arr[i];
+                arr[i] = arr[j];
+                arr[j] = temp;
+            }
+        }
+    }
+    console.log(arr);
+
+</script>
+</body>
+</html>

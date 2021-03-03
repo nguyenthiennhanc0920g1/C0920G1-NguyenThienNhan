@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="Request_Employee.css">
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+    <title>Employee</title>
+</head>
+<body>
+<div style="width: 100%; height: 150px;">
+    <h1 style="font-size: 50px">MANAGER EMPLOYEE</h1>
+    <h2>FURAMA RESORT</h2>
+</div>
+<div id="content" class="container">
+    <div id="pic">
+        <p style="list-style: none; width: 340%; margin-left: -5px"><img onmouseover="change('one')"
+                                                                         onmouseout="cancelChange('one')" id="one"
+                                                                         style="width: 30%" src="ironman.jpeg"></p><br/>
+        <p style="list-style: none; width: 340%; margin-left: -5px; margin-top: -35px"><img onmouseover="change('two')"
+                                                                                            onmouseout="cancelChange('two')"
+                                                                                            id="two" style="width: 30%"
+                                                                                            src="captain.jpeg"></p><br/>
+        <p style="list-style: none; width: 340%; margin-left: -5px; margin-top: -35px"><img
+                onmouseover="change('three')" onmouseout="cancelChange('three')" id="three" style="width: 30%"
+                src="thor.jpeg"></p><br/>
+        <p style="list-style: none; width: 340%; margin-left: -5px; margin-top: -35px"><img onmouseover="change('four')"
+                                                                                            onmouseout="cancelChange('four')"
+                                                                                            id="four" style="width: 30%"
+                                                                                            src="hulk.jpeg"></p><br/>
+        <p style="list-style: none; width: 340%; margin-left: -5px; margin-top: -35px"><img onmouseover="change('five')"
+                                                                                            onmouseout="cancelChange('five')"
+                                                                                            id="five" style="width: 30%"
+                                                                                            src="thanos.jpeg"></p>
+    </div>
+    <div id="imgMain">
+        <img style="position: absolute; margin-top: -100px" id="img" src="">
+    </div>
+    <div id="post">
+        <h3 style="text-align: center; font-size: 30px">EMPLOYEE INFORMATION</h3>
+        <form id="inputEmployee">
+            <table>
+                <tr>
+                    <td>Full name:</td>
+                    <td><input onblur="checkX(fullName)" id="inName" type="text"></td>
+                </tr>
+                <tr>
+                    <td>Identify card:</td>
+                    <td><input onkeydown="limitMaxText(this, 8); return isNumberKey(this)"
+                               onkeyup="limitMaxText(this, 8)" onblur="limitMinText(this, 0)" id="inIdCard" type="text">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Birthday:</td>
+                    <td><input id="inBirth" type="date"></td>
+                </tr>
+                <tr>
+                    <td>Email:</td>
+                    <td><input onblur="checkEmail()" id="inEmail" type="text"></td>
+                </tr>
+                <tr>
+                    <td>Phone:</td>
+                    <td><input onkeydown="return isNumberKey(this)" id="inPhone" type="text"></td>
+                </tr>
+                <tr>
+                    <td>Level:</td>
+                    <td>
+                        <label>
+                            <select id="inLevel">
+                                <option value="Intermediate">Intermediate</option>
+                                <option value="College">College</option>
+                                <option value="University">University</option>
+                                <option value="Postgraduate">Postgraduate</option>
+                            </select>
+                        </label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Position:</td>
+                    <td>
+                        <label>
+                            <select id="inPosition">
+                                <option value="Receptionist">Receptionist</option>
+                                <option value="Waitress/Waiter">Waitress/Waiter</option>
+                                <option value="Specialist">Specialist</option>
+                                <option value="Supervisor">Supervisor</option>
+                                <option value="Manager">Manager</option>
+                                <option value="Director">Director</option>
+                            </select>
+                        </label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Department:</td>
+                    <td>
+                        <label>
+                            <select id="inDepartment">
+                                <option value="Sale-Marketing">Sale-Marketing</option>
+                                <option value="Administration">Administration</option>
+                                <option value="Service">Service</option>
+                                <option value="Management">Management</option>
+                            </select>
+                        </label>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <button type="button" onclick="checkData(); checkBirth()" value="accept">Accept
+                        </button>
+                    </td>
+                    <td>
+                        <button type="reset" id="reset" value="reset">Reset</button>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    <div id="sidebar">
+        <script>
+            document.getElementById('sidebar').style.display = 'none';
+        </script>
+        <h3 style="text-align: center; font-size: 30px">CONFIRM EMPLOYEE INFORMATION</h3>
+        <form>
+            <table>
+                <tr>
+                    <td>Full name:</td>
+                    <td id="outName"></td>
+                </tr>
+                <tr>
+                    <td>Identify card:</td>
+                    <td id="outIdCard"></td>
+                </tr>
+                <tr>
+                    <td>Birthday:</td>
+                    <td id="outBirth"></td>
+                </tr>
+                <tr>
+                    <td>Email:</td>
+                    <td id="outEmail"></td>
+                </tr>
+                <tr>
+                    <td>Phone:</td>
+                    <td id="outPhone"></td>
+                </tr>
+                <tr>
+                    <td>Level:</td>
+                    <td id="outLevel"></td>
+                </tr>
+                <tr>
+                    <td>Position:</td>
+                    <td id="outPosition"></td>
+                </tr>
+                <tr>
+                    <td>Department:</td>
+                    <td id="outDepartment"></td>
+                </tr>
+                <tr>
+                    <td>Salary:</td>
+                    <td id="outSalary"></td>
+                </tr>
+                <tr>
+                    <td>
+                        <button type="button" onclick="editData()" id="edit">Edit</button>
+                    </td>
+                    <td>
+                        <button type="button" onclick="finish()" id="complete">Complete</button>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    <div id="displayEmployee">
+        <form>
+            <h3 style="text-align: center; font-size: 35px">Display Employee</h3>
+            <ol id="list"></ol>
+            <button type="button" id="editEmployee" onclick="editEmployees()">Edit</button>
+            <button type="button" id="delete" onclick="deleteEmployee()">Delete</button>
+            <button type="button" id="detail" onclick="detailEmployee()">Detail</button>
+        </form>
+    </div>
+    <div id="detailEmployee">
+        <form>
+            <h3 style="text-align: center; font-size: 35px">Detail Employee</h3>
+            <ul id="detailList"></ul>
+        </form>
+    </div>
+</div>
+</body>
+<script src="Request_Employee.js"></script>
+</html>

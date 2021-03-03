@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="cda05bac-5772-49c2-a419-594f1672b139" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Module 4/DemoFiles/UploadMultiFile/CGDN-Spring-UploadMultiFiles/DemoUploadFile2/.idea/artifacts/DemoUploadFile_war_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module 4/DemoFiles/UploadMultiFile/CGDN-Spring-UploadMultiFiles/DemoUploadFile2/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module 2/.idea/libraries/Java_EE_6_Java_EE_6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Module 2/.idea/libraries/Java_EE_6_Java_EE_6.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module 2/src/Data_case_study_SQL/ContractDetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/Module 2/src/Data_case_study_SQL/ContractDetail.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module 2/src/Data_case_study_SQL/Contracts.java" beforeDir="false" afterPath="$PROJECT_DIR$/Module 2/src/Data_case_study_SQL/Contracts.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module 4/DemoFiles/UploadMultiFile/CGDN-Spring-UploadMultiFiles" beforeDir="false" afterPath="$PROJECT_DIR$/Module 4/DemoFiles/UploadMultiFile/CGDN-Spring-UploadMultiFiles" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module 4/DemoFiles/UploadMultiFile/CGDN-Spring-UploadMultiFiles/DemoUploadFile2/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Module 4/DemoFiles/UploadMultiFile/CGDN-Spring-UploadMultiFiles/DemoUploadFile2/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module 4/DemoFiles/UploadMultiFile/CGDN-Spring-UploadMultiFiles/DemoUploadFile2/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Module 4/DemoFiles/UploadMultiFile/CGDN-Spring-UploadMultiFiles/DemoUploadFile2/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module 4/DemoFiles/UploadMultiFile/CGDN-Spring-UploadMultiFiles/DemoUploadFile2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Module 4/DemoFiles/UploadMultiFile/CGDN-Spring-UploadMultiFiles/DemoUploadFile2/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module 4/DemoFiles/UploadMultiFile/CGDN-Spring-UploadMultiFiles/DemoUploadFile2/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Module 4/DemoFiles/UploadMultiFile/CGDN-Spring-UploadMultiFiles/DemoUploadFile2/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module 4/DemoFiles/UploadMultiFile/CGDN-Spring-UploadMultiFiles/DemoUploadFile2/src/main/java/com/codegym/controller/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Module 4/DemoFiles/UploadMultiFile/CGDN-Spring-UploadMultiFiles/DemoUploadFile2/src/main/java/com/codegym/controller/HomeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module 4/DemoFiles/UploadMultiFile/CGDN-Spring-UploadMultiFiles/DemoUploadFile2/src/main/webapp/WEB-INF/spring-mvc-servlet.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Module 4/DemoFiles/UploadMultiFile/CGDN-Spring-UploadMultiFiles/DemoUploadFile2/src/main/webapp/WEB-INF/spring-mvc-servlet.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module 4/DemoFiles/UploadMultiFile/CGDN-Spring-UploadMultiFiles/DemoUploadFile2/src/main/webapp/WEB-INF/views/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/Module 4/DemoFiles/UploadMultiFile/CGDN-Spring-UploadMultiFiles/DemoUploadFile2/src/main/webapp/WEB-INF/views/multiFile.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module 4/DemoFiles/UploadMultiFile/CGDN-Spring-UploadMultiFiles/DemoUploadFile2/src/main/webapp/resources/bootstrap/js/bootstrap.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/Module 4/DemoFiles/UploadMultiFile/CGDN-Spring-UploadMultiFiles/DemoUploadFile2/src/main/webapp/resources/bootstrap/js/bootstrap.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module 4/DemoFiles/UploadMultiFile/CGDN-Spring-UploadMultiFiles/DemoUploadFile2/src/main/webapp/resources/bootstrap/js/jquery-3.2.1.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/Module 4/DemoFiles/UploadMultiFile/CGDN-Spring-UploadMultiFiles/DemoUploadFile2/src/main/webapp/resources/bootstrap/js/jquery-3.2.1.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module 4/DemoFiles/UploadMultiFile/CGDN-Spring-UploadMultiFiles/DemoUploadFile2/target/DemoUploadFile/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/Module 4/DemoFiles/UploadMultiFile/CGDN-Spring-UploadMultiFiles/DemoUploadFile2/target/DemoUploadFile/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module 4/DemoFiles/UploadMultiFile/CGDN-Spring-UploadMultiFiles/DemoUploadFile2/target/DemoUploadFile/WEB-INF/classes/com/codegym/controller/HomeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/Module 4/DemoFiles/UploadMultiFile/CGDN-Spring-UploadMultiFiles/DemoUploadFile2/target/DemoUploadFile/WEB-INF/classes/com/codegym/controller/HomeController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module 4/DemoFiles/UploadMultiFile/CGDN-Spring-UploadMultiFiles/DemoUploadFile2/target/DemoUploadFile/WEB-INF/spring-mvc-servlet.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Module 4/DemoFiles/UploadMultiFile/CGDN-Spring-UploadMultiFiles/DemoUploadFile2/target/DemoUploadFile/WEB-INF/spring-mvc-servlet.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module 4/DemoFiles/UploadMultiFile/CGDN-Spring-UploadMultiFiles/DemoUploadFile2/target/DemoUploadFile/resources/bootstrap/js/bootstrap.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/Module 4/DemoFiles/UploadMultiFile/CGDN-Spring-UploadMultiFiles/DemoUploadFile2/target/DemoUploadFile/resources/bootstrap/js/bootstrap.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module 4/DemoFiles/UploadMultiFile/CGDN-Spring-UploadMultiFiles/DemoUploadFile2/target/DemoUploadFile/resources/bootstrap/js/jquery-3.2.1.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/Module 4/DemoFiles/UploadMultiFile/CGDN-Spring-UploadMultiFiles/DemoUploadFile2/target/DemoUploadFile/resources/bootstrap/js/jquery-3.2.1.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module 4/DemoFiles/UploadMultiFile/CGDN-Spring-UploadMultiFiles/DemoUploadFile2/target/classes/com/codegym/controller/HomeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/Module 4/DemoFiles/UploadMultiFile/CGDN-Spring-UploadMultiFiles/DemoUploadFile2/target/classes/com/codegym/controller/HomeController.class" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1oMWDJjjhmaSwrl6l08NqZZCxPj" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="cda05bac-5772-49c2-a419-594f1672b139" name="Default Changelist" comment="" />
+      <created>1613096818413</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1613096818413</updated>
+      <workItem from="1613096819562" duration="129000" />
+    </task>
+    <servers />
+  </component>
+</project>

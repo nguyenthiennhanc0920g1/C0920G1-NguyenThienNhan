@@ -1,0 +1,70 @@
+DROP DATABASE IF EXISTS homework;
+CREATE DATABASE IF NOT EXISTS homework;
+USE homework;
+
+CREATE TABLE Categories(
+Id INT AUTO_INCREMENT PRIMARY KEY,
+`Name` VARCHAR(50) DEFAULT'no name',
+`Description` VARCHAR(500)
+);
+
+CREATE TABLE Supplies(
+Id INT AUTO_INCREMENT PRIMARY KEY,
+`Name` VARCHAR(100),
+Email VARCHAR(50),
+PhoneNumber VARCHAR(50),
+Address VARCHAR(500)
+);
+
+CREATE TABLE Customers(
+Id VARCHAR(50) PRIMARY KEY,
+FirstName VARCHAR(50),
+LastName VARCHAR(50),
+PhoneNumber VARCHAR(50),
+Address VARCHAR(500),
+Email VARCHAR(50),
+Birthday DATE
+);
+
+CREATE TABLE Employees(
+Id VARCHAR(50) PRIMARY KEY,
+FirstName VARCHAR(50),
+LastName VARCHAR(50),
+PhoneNumber VARCHAR(50),
+Address VARCHAR(500),
+Email VARCHAR(50),
+Birthday DATE
+);
+
+CREATE TABLE Products(
+Id INT AUTO_INCREMENT PRIMARY KEY,
+`Name` VARCHAR(255),
+UmageUrl VARCHAR(1000),
+Price INT,
+Discount INT,
+Stock INT,
+CategoryId INT,
+SupplierId INT,
+`Description` VARCHAR(15000)
+);
+
+CREATE TABLE Orders(
+Id INT AUTO_INCREMENT PRIMARY KEY,
+CreatedDate DATETIME,
+ShippedDate DATETIME,
+`Status` VARCHAR(50),
+`Description` VARCHAR(15000),
+ShippingAddress VARCHAR(500),
+ShippingCity VARCHAR(50),
+PaymentType VARCHAR(20),
+CustomerId VARCHAR(50),
+EmployeeId VARCHAR(50)
+);
+
+CREATE TABLE OrderDetails(
+Id INT AUTO_INCREMENT PRIMARY KEY,
+OrderId INT,
+ProductId INT,
+Quantity INT
+);
+DROP DATABASE homework;

@@ -1,0 +1,13 @@
+table{}
+select{
+    width: 20em;
+    height: 2em;
+}
+th{
+    width: 300px;
+    text-align: left;
+}
+td{
+    width: 130px;
+    text-align: center;
+}

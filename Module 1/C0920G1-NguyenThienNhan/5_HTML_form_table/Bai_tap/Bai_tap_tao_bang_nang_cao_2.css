@@ -1,0 +1,27 @@
+p{
+    text-align: center;
+    color: blue;
+    font-size: 70px;
+}
+table{
+    margin-right: auto;
+    margin-left: auto;
+    table-layout: fixed;
+    width: 80%;
+}
+thead{
+    background-color: darkgoldenrod;
+    color: white;
+}
+tbody{
+    font-size: 50px;
+    text-align: center;
+    width: 80%;
+    height: 50px;
+}
+th{
+    font-size: 40px;
+}
+sub{
+    font-size: 30px;
+}
